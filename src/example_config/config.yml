@@ -1,0 +1,31 @@
+nats:
+  host: "211.151.13.13"
+  port: 4222
+  user: nats
+  pass: 1qaz2wsx
+
+logging:
+  file: /export/home/jae/dea-docker.log
+  level: debug
+
+dea:
+  port: 34504
+  handlerLogging: true
+  basePath: dea-docker
+  index: 1
+  snapshot_path:	/export/home
+  memory_mb:	1024
+  disk_mb:	1024
+  memory_factor: 32
+  disk_factor: 200
+  standby_memory: 0
+  standby_disk: 0
+  port_pool_start:	61000
+  PortPoolEnd:	69999
+  disk_path:	/export/home
+  
+docker:
+  docker_url:	http://127.0.0.1:4243
+  Version: 
+  docker_registry:	
+  docker_path:	/var/lib/docker/
